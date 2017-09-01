@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="{% static 'deaf/jquery.django-csrf.js' %}"></script>
+	<script src="{% static 'deaf/main.js' %}"></script>
+</head>
+<body>
+	<h1>Say something</h1>
+	<form id="say-form">
+		<input type="text" name="say">
+		<input type="submit">
+	</form>
+	<hr>
+	<div id="say-res">
+	</div>
+</body>
+</html>
